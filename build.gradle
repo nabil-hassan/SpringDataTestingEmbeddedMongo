@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation "org.slf4j:slf4j-log4j12:${slf4jVersion}"
+    implementation "org.springframework.data:spring-data-mongodb:${springDataVersion}"
+
+    testImplementation "de.flapdoodle.embed:de.flapdoodle.embed.mongo:${flapDoodleVersion}"
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation  "org.springframework:spring-test:$springTestVersion"
+}
