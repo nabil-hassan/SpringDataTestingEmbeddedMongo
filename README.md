@@ -3,9 +3,9 @@ Simple Spring Data project which shows how you can use an embedded Mongo databas
 
 The main feature of the project is the tests:
 
-'''
+```
 ./gradlew clean test
-'''
+```
 
 However, the project also includes a static main method in ApplicationMain, which you can use to write code against a local mongo instance.
 
